@@ -1,0 +1,10 @@
+pandoc: 2.19.2
+pkgdown: 2.0.6
+pkgdown_sha: ~
+articles:
+  UCH: UCH.html
+last_built: 2022-11-10T10:29Z
+urls:
+  reference: https://manonmartin.github.io/limpca/reference
+  article: https://manonmartin.github.io/limpca/articles
+
