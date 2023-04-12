@@ -80,7 +80,8 @@
 <span>  size <span class="op">=</span> <span class="fl">0.5</span>,</span>
 <span>  color <span class="op">=</span> <span class="cn">NULL</span>,</span>
 <span>  shape <span class="op">=</span> <span class="fl">1</span>,</span>
-<span>  theme <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span></span>
+<span>  theme <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>  ang_x_axis <span class="op">=</span> <span class="cn">NULL</span></span>
 <span><span class="op">)</span></span></code></pre></div>
     </div>
 
@@ -91,11 +92,11 @@
 
 
 <dt>rows</dt>
-<dd><p>A vector with either the row name(s) of the Y matrix to plot (character) or the row index position(s).</p></dd>
+<dd><p>A vector with either the row name(s) of the Y matrix to plot (character) or the row index position(s). Default to 1.</p></dd>
 
 
 <dt>type</dt>
-<dd><p>Type of graph to be drawn: "p" for point, "l" for line or "s" for segment.</p></dd>
+<dd><p>Type of graph to be drawn: "p" for point, "l" for line (default) or "s" for segment.</p></dd>
 
 
 <dt>title</dt>
@@ -111,7 +112,7 @@
 
 
 <dt>xaxis_type</dt>
-<dd><p>The data type of the x axis: either "numeric" or "character".</p></dd>
+<dd><p>The data type of the x axis: either "numeric" (default) or "character".</p></dd>
 
 
 <dt>stacked</dt>
@@ -119,7 +120,7 @@
 
 
 <dt>ncol</dt>
-<dd><p>If stacked is <code>FALSE</code>, the number of columns to represent the separate plots.</p></dd>
+<dd><p>If stacked is <code>FALSE</code>, the number of columns to represent the separate plots. Default to 1.</p></dd>
 
 
 <dt>nrow</dt>
@@ -131,7 +132,7 @@
 
 
 <dt>hline</dt>
-<dd><p>If not <code>NULL</code>, draws (a) horizontal line(s).</p></dd>
+<dd><p>If not <code>NULL</code>, draws (a) horizontal line(s), by default at y intercept = 0.</p></dd>
 
 
 <dt>size</dt>
@@ -143,11 +144,15 @@
 
 
 <dt>shape</dt>
-<dd><p>The points shape if <code>type</code> == "p" (argument of length 1).</p></dd>
+<dd><p>Argument of length 1 giving the points shape (default = 1) if <code>type</code> == "p".</p></dd>
 
 
 <dt>theme</dt>
-<dd><p>ggplot theme, see <code>?ggtheme</code> for more info.</p></dd>
+<dd><p>ggplot theme (default: <code><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_bw()</a></code>), see <code>?ggtheme</code> for more info.</p></dd>
+
+
+<dt>ang_x_axis</dt>
+<dd><p>If not <code>NULL</code>, rotation angle to rotate the x axis text (based on the argument <code>axis.text.x</code> from ggplot2::theme)</p></dd>
 
 </dl></div>
     <div class="section level2">
