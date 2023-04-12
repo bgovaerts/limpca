@@ -8,10 +8,10 @@
 <meta name="description" content="limpca">
 <title>Application of `limpca` on the UCH metabolomics dataset. • limpca</title>
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
-<!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Application of `limpca` on the UCH metabolomics dataset.">
+<!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Application of `limpca` on the UCH metabolomics dataset.">
 <meta property="og:description" content="limpca">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -83,7 +83,7 @@
 Sébastien Franceschini, Martin Manon, Thiel Michel, Govaerts
 Bernadette</h4>
             
-            <h4 data-toc-skip class="date">December 08, 2022</h4>
+            <h4 data-toc-skip class="date">April 12, 2023</h4>
       
       <small class="dont-index">Source: <a href="https://github.com/ManonMartin/limpca/blob/HEAD/vignettes/UCH.Rmd" class="external-link"><code>vignettes/UCH.Rmd</code></a></small>
       <div class="d-none name"><code>UCH.Rmd</code></div>
@@ -874,7 +874,7 @@ get an accurate value for the p-values.</p>
 <td align="center">&lt; 0.01</td>
 <td align="center">&lt; 0.01</td>
 <td align="center">&lt; 0.01</td>
-<td align="center">0.18</td>
+<td align="center">0.11</td>
 </tr>
 </tbody>
 </table>
@@ -899,7 +899,7 @@ get an accurate value for the p-values.</p>
 <tr class="even">
 <td align="center"><strong>Bootstrap p-values</strong></td>
 <td align="center">&lt; 0.01</td>
-<td align="center">0.46</td>
+<td align="center">0.42</td>
 </tr>
 </tbody>
 </table>
@@ -1328,7 +1328,8 @@ left side of the removed water area.</p>
 <code class="sourceCode R"><span><span class="co"># Time</span></span>
 <span><span class="va">tim_scores_pl</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/lmpScorePlot.html">lmpScorePlot</a></span><span class="op">(</span><span class="va">resASCA</span>, effectNames <span class="op">=</span> <span class="st">"Time"</span>, color <span class="op">=</span> <span class="st">"Time"</span>, </span>
 <span>                              shape <span class="op">=</span> <span class="st">"Time"</span><span class="op">)</span></span></code></pre></div>
-<pre><code>Warning in FUN(X[[i]], ...): The variance of PC2 is inferior to 1%. Graph scaled</code></pre>
+<pre><code>Warning in FUN(X[[i]], ...): The variance of PC2 is inferior to 1%. Graph
+scaled</code></pre>
 <div class="sourceCode" id="cb40"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">time_peaks</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/annotate.html" class="external-link">annotate</a></span><span class="op">(</span><span class="st">"rect"</span>, xmin<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">5.955364</span><span class="op">)</span>, xmax<span class="op">=</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">6.155364</span><span class="op">)</span>, </span>
 <span>              ymin<span class="op">=</span><span class="op">-</span><span class="cn">Inf</span>, ymax<span class="op">=</span><span class="cn">Inf</span>, alpha<span class="op">=</span><span class="fl">0.2</span>, </span>
@@ -1609,7 +1610,8 @@ confirmed by their significance.</p>
 <div class="sourceCode" id="cb70"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/lmpScorePlot.html">lmpScorePlot</a></span><span class="op">(</span><span class="va">resASCAE</span>, effectNames <span class="op">=</span> <span class="st">"Time"</span>, </span>
 <span>             color <span class="op">=</span> <span class="st">"Time"</span>, shape <span class="op">=</span> <span class="st">"Time"</span><span class="op">)</span></span></code></pre></div>
-<pre><code>Warning in FUN(X[[i]], ...): The variance of PC2 is inferior to 1%. Graph scaled</code></pre>
+<pre><code>Warning in FUN(X[[i]], ...): The variance of PC2 is inferior to 1%. Graph
+scaled</code></pre>
 <p><img src="UCH_files/figure-html/ASCAE%20ScoresXY-3.png" width="700"></p>
 <div class="sourceCode" id="cb72"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="../reference/lmpScorePlot.html">lmpScorePlot</a></span><span class="op">(</span><span class="va">resASCAE</span>, effectNames <span class="op">=</span> <span class="st">"Hippurate:Time"</span>, </span>
@@ -1635,9 +1637,9 @@ confirmed by their significance.</p>
 </h2>
 <div class="sourceCode" id="cb74"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/sessionInfo.html" class="external-link">sessionInfo</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
-<pre><code>R version 4.2.2 (2022-10-31)
+<pre><code>R version 4.2.3 (2023-03-15)
 Platform: x86_64-pc-linux-gnu (64-bit)
-Running under: Ubuntu 22.04.1 LTS
+Running under: Ubuntu 22.04.2 LTS
 
 Matrix products: default
 BLAS:   /usr/lib/x86_64-linux-gnu/openblas-pthread/libblas.so.3
@@ -1653,40 +1655,32 @@ attached base packages:
 [1] stats     graphics  grDevices utils     datasets  methods   base     
 
 other attached packages:
-[1] limpca_0.0.99    gridExtra_2.3    ggplot2_3.4.0    pander_0.6.5    
-[5] BiocStyle_2.24.0
+[1] limpca_0.0.99    gridExtra_2.3    ggplot2_3.4.2    pander_0.6.5    
+[5] BiocStyle_2.26.0
 
 loaded via a namespace (and not attached):
- [1] fs_1.5.2            lubridate_1.9.0     doParallel_1.0.17  
- [4] httr_1.4.4          rprojroot_2.0.3     ggsci_2.9          
- [7] tools_4.2.2         backports_1.4.1     bslib_0.4.1        
-[10] utf8_1.2.2          R6_2.5.1            DBI_1.1.3          
-[13] colorspace_2.0-3    withr_2.5.0         tidyselect_1.2.0   
-[16] curl_4.3.3          compiler_4.2.2      textshaping_0.3.6  
-[19] cli_3.4.1           rvest_1.0.3         xml2_1.3.3         
-[22] desc_1.4.2          labeling_0.4.2      bookdown_0.30      
-[25] sass_0.4.4          scales_1.2.1        readr_2.1.3        
-[28] pkgdown_2.0.6       systemfonts_1.0.4   stringr_1.5.0      
-[31] digest_0.6.30       rmarkdown_2.18      pkgconfig_2.0.3    
-[34] htmltools_0.5.4     dbplyr_2.2.1        fastmap_1.1.0      
-[37] highr_0.9           rlang_1.0.6         readxl_1.4.1       
-[40] jquerylib_0.1.4     generics_0.1.3      farver_2.1.1       
-[43] jsonlite_1.8.4      dplyr_1.0.10        googlesheets4_1.0.1
-[46] magrittr_2.0.3      Rcpp_1.0.9          munsell_0.5.0      
-[49] fansi_1.0.3         lifecycle_1.0.3     stringi_1.7.8      
-[52] yaml_2.3.6          plyr_1.8.8          grid_4.2.2         
-[55] parallel_4.2.2      ggrepel_0.9.2       forcats_0.5.2      
-[58] haven_2.5.1         hms_1.1.2           knitr_1.41         
-[61] pillar_1.8.1        reshape2_1.4.4      codetools_0.2-18   
-[64] reprex_2.0.2        glue_1.6.2          evaluate_0.18      
-[67] BiocManager_1.30.19 modelr_0.1.10       vctrs_0.5.1        
-[70] tzdb_0.3.0          foreach_1.5.2       cellranger_1.1.0   
-[73] gtable_0.3.1        purrr_0.3.5         tidyr_1.2.1        
-[76] assertthat_0.2.1    cachem_1.0.6        xfun_0.35          
-[79] broom_1.0.1         tidyverse_1.3.2     ragg_1.2.4         
-[82] googledrive_2.0.0   gargle_1.2.1        tibble_3.1.8       
-[85] iterators_1.0.14    memoise_2.0.1       timechange_0.1.1   
-[88] ellipsis_0.3.2     </code></pre>
+ [1] tidyselect_1.2.0    xfun_0.38           bslib_0.4.2        
+ [4] reshape2_1.4.4      purrr_1.0.1         colorspace_2.1-0   
+ [7] vctrs_0.6.1         generics_0.1.3      htmltools_0.5.5    
+[10] yaml_2.3.7          utf8_1.2.3          rlang_1.1.0        
+[13] pkgdown_2.0.7       jquerylib_0.1.4     pillar_1.9.0       
+[16] glue_1.6.2          withr_2.5.0         tidyverse_2.0.0    
+[19] plyr_1.8.8          foreach_1.5.2       lifecycle_1.0.3    
+[22] stringr_1.5.0       munsell_0.5.0       gtable_0.3.3       
+[25] ggsci_3.0.0         ragg_1.2.5          codetools_0.2-19   
+[28] memoise_2.0.1       evaluate_0.20       labeling_0.4.2     
+[31] knitr_1.42          fastmap_1.1.1       doParallel_1.0.17  
+[34] parallel_4.2.3      fansi_1.0.4         highr_0.10         
+[37] Rcpp_1.0.10         scales_1.2.1        BiocManager_1.30.20
+[40] cachem_1.0.7        desc_1.4.2          jsonlite_1.8.4     
+[43] farver_2.1.1        systemfonts_1.0.4   fs_1.6.1           
+[46] textshaping_0.3.6   digest_0.6.31       stringi_1.7.12     
+[49] bookdown_0.33       dplyr_1.1.1         ggrepel_0.9.3      
+[52] grid_4.2.3          rprojroot_2.0.3     cli_3.6.1          
+[55] tools_4.2.3         magrittr_2.0.3      sass_0.4.5         
+[58] tibble_3.2.1        tidyr_1.3.0         pkgconfig_2.0.3    
+[61] rmarkdown_2.21      iterators_1.0.14    R6_2.5.1           
+[64] compiler_4.2.3     </code></pre>
 </div>
 <div class="section level2">
 <h2 class="unnumbered" id="references">References<a class="anchor" aria-label="anchor" href="#references"></a>
@@ -1719,7 +1713,7 @@ Chemometrics</em>.
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.7.</p>
 </div>
 
     </footer>
