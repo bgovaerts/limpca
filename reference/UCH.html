@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">limpca</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.99</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.99.0</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -87,7 +87,10 @@
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>The database has been experimentally created in order to control the spectral locations of the biomarkers to find (i.e. <code>Hippurate</code> and <code>Citrate</code>). This property allows us to evaluate the performances of the data analysis of various statistical methods.
+    
+
+<p>The UCH vignette can be accessed with: (<code>print(vignette(topic = "UCH", package = "limpca"))</code>).</p>
+<p>The database has been experimentally created in order to control the spectral locations of the biomarkers to find (i.e. <code>Hippurate</code> and <code>Citrate</code>). This property allows us to evaluate the performances of the data analysis of various statistical methods.
 This urine experimental database is also designed in order to explore the influence on spectra of intra-sample 1H NMR replications (<code>Time</code>), and inter-day 1H NMR measurements (<code>Day</code>).</p>
 <p>The model formula is:</p>
 <p><code>outcomes = Hippurate + Citrate + Time +
