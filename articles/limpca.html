@@ -116,7 +116,8 @@ with the following command:
 (<code>outcomes</code>), a <code>design</code> data.frame and a
 <code>formula</code> as a character string:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">UCH</span><span class="op">)</span></span>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/utils/data.html" class="external-link">data</a></span><span class="op">(</span><span class="st">"UCH"</span><span class="op">)</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">UCH</span><span class="op">)</span></span>
 <span><span class="co">#&gt; List of 3</span></span>
 <span><span class="co">#&gt;  $ design  :'data.frame':    34 obs. of  5 variables:</span></span>
 <span><span class="co">#&gt;   ..$ Hippurate: Factor w/ 3 levels "0","1","2": 1 1 1 1 1 1 2 2 2 2 ...</span></span>
@@ -191,10 +192,10 @@ with the following command:
 <span><span class="co">#&gt; Hippurate                              39.31             &lt; 0.01</span></span>
 <span><span class="co">#&gt; Citrate                                29.91             &lt; 0.01</span></span>
 <span><span class="co">#&gt; Time                                   16.24             &lt; 0.01</span></span>
-<span><span class="co">#&gt; Hippurate:Citrate                       1.54               0.15</span></span>
+<span><span class="co">#&gt; Hippurate:Citrate                       1.54               0.11</span></span>
 <span><span class="co">#&gt; Hippurate:Time                          6.23             &lt; 0.01</span></span>
 <span><span class="co">#&gt; Citrate:Time                            0.54               0.39</span></span>
-<span><span class="co">#&gt; Hippurate:Citrate:Time                  1.68               0.06</span></span>
+<span><span class="co">#&gt; Hippurate:Citrate:Time                  1.68               0.11</span></span>
 <span><span class="co">#&gt; Residuals                               4.30                  -</span></span></code></pre></div>
 </div>
 <div class="section level3">
